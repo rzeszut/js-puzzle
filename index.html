@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Puzzle</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="css/styles.css" type="text/css" charset="utf-8" />
+</head>
+<body onload="initialize();">
+    <div id="puzzle-area">
+        <canvas id="puzzle-canvas" width="800" height="600"></canvas>
+
+        <div id="puzzle-controls">
+            <label id="puzzle-difficulty-label" for="difficulty">Difficulty: </label>
+            <input id="puzzle-difficulty" type="range" min="2" max="16" step="1" value="4" />
+            <input type="text" id="puzzle-difficulty-text" value="4" disabled="true" />
+
+            <button id="puzzle-shuffle">Shuffle</button>
+        </div>
+    </div>
+
+    <div id="overlay">
+        <div id="puzzle-score">
+            <span id="puzzle-score-title">Score for current difficulty:</span>
+            <ol id="puzzle-score-list">
+                <li>asdfasdf</li>
+                <li>fgsfs</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="js/extensions.js"></script>
+    <script src="js/mouse.js"></script>
+    <script src="js/stopwatch.js"></script>
+    <script src="js/puzzle.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
