@@ -387,6 +387,8 @@ var Puzzle = (function() {
 
             // stop animation when all pieces are in their places
             if (currentPieceIndex >= self.pieces.length) {
+                // make final draw of the puzzle
+                redrawPuzzle(self);
                 // call passed function after animation ends
                 fn();
                 return;
